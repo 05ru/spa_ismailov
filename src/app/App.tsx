@@ -1,5 +1,11 @@
 import { useState } from "react";
 import { motion } from "motion/react";
+import computerEquipmentImage from "../assets/computer-equipment.jpg";
+import developmentImage from "../assets/development.jpg";
+import equipmentRepairImage from "../assets/equipment-repair.jpg";
+import householdAppliancesImage from "../assets/household-appliances.jpg";
+import officeEquipmentImage from "../assets/office-equipment.jpg";
+import phonesAndGadgetsImage from "../assets/phones-and-gadgets.jpg";
 import { 
   Monitor, 
   Smartphone, 
@@ -261,7 +267,7 @@ export default function App() {
               className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition"
             >
               <img 
-                src="https://images.unsplash.com/photo-1615274821871-18e23b3bc16b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsYXB0b3AlMjBvZmZpY2UlMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzczMzE1NzMzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src={computerEquipmentImage}
                 alt="Компьютеры"
                 className="w-full h-48 object-cover"
               />
@@ -286,7 +292,7 @@ export default function App() {
               className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition"
             >
               <img 
-                src="https://images.unsplash.com/photo-1598860237986-013eede8beae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbWFydHBob25lJTIwdGVjaG5vbG9neSUyMGdhZGdldHN8ZW58MXx8fHwxNzczMzE5MzQyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src={phonesAndGadgetsImage}
                 alt="Смартфоны"
                 className="w-full h-48 object-cover"
               />
@@ -310,9 +316,11 @@ export default function App() {
               viewport={{ once: true }}
               className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition"
             >
-              <div className="w-full h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-                <Printer className="w-24 h-24 text-white opacity-80" />
-              </div>
+              <img 
+                src={officeEquipmentImage}
+                alt="Офисная техника"
+                className="w-full h-48 object-cover"
+              />
               <div className="p-6">
                 <div className="flex items-center mb-3">
                   <Printer className="w-6 h-6 text-blue-600 mr-2" />
@@ -334,7 +342,7 @@ export default function App() {
               className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition"
             >
               <img 
-                src="https://images.unsplash.com/photo-1642979427252-13d5fd18bb61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob21lJTIwYXBwbGlhbmNlcyUyMG1vZGVybiUyMGtpdGNoZW58ZW58MXx8fHwxNzczMzE5MzQzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src={householdAppliancesImage}
                 alt="Бытовая техника"
                 className="w-full h-48 object-cover"
               />
@@ -359,7 +367,7 @@ export default function App() {
               className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition"
             >
               <img 
-                src="https://images.unsplash.com/photo-1672385277648-85eddc237a2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb2Z0d2FyZSUyMGRldmVsb3BtZW50JTIwY29kaW5nfGVufDF8fHx8MTc3MzI3NDIyM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src={developmentImage}
                 alt="IT-услуги"
                 className="w-full h-48 object-cover"
               />
@@ -384,7 +392,7 @@ export default function App() {
               className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition"
             >
               <img 
-                src="https://images.unsplash.com/photo-1768633647910-7e6fb53e5b0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21wdXRlciUyMHJlcGFpciUyMHNlcnZpY2V8ZW58MXx8fHwxNzczMzE5MzQzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src={equipmentRepairImage}
                 alt="Ремонт техники"
                 className="w-full h-48 object-cover"
               />
