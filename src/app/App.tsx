@@ -6,6 +6,7 @@ import equipmentRepairImage from "../assets/equipment-repair.jpg";
 import householdAppliancesImage from "../assets/household-appliances.jpg";
 import officeEquipmentImage from "../assets/office-equipment.jpg";
 import phonesAndGadgetsImage from "../assets/phones-and-gadgets.jpg";
+import bannerImage from "../assets/banner-img.webp";
 import { 
   Monitor, 
   Smartphone, 
@@ -163,9 +164,13 @@ export default function App() {
               className="relative"
             >
               <img 
-                src="https://images.unsplash.com/photo-1627160280085-2dbb99a7c4ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjb21wdXRlciUyMGVsZWN0cm9uaWNzJTIwc3RvcmV8ZW58MXx8fHwxNzczMzE5MzQyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src={bannerImage}
                 alt="Магазин электроники"
                 className="rounded-2xl shadow-2xl w-full"
+                width={1080}
+                height={720}
+                fetchPriority="high"
+                decoding="async"
               />
             </motion.div>
           </div>
