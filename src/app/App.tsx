@@ -302,7 +302,7 @@ export default function App() {
                   <h3 className="text-xl font-semibold text-gray-900">Телефоны и гаджеты</h3>
                 </div>
                 <p className="text-gray-600 mb-4">
-                  Смартфоны, планшеты, наушники, портативные колонки и акс��ссуары
+                  Смартфоны, планшеты, наушники, портативные колонки и аксессуары
                 </p>
                 <p className="text-blue-600 font-semibold">от 1 290 ₽</p>
               </div>
