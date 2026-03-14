@@ -2,7 +2,6 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import computerEquipmentImage from "../assets/computer-equipment.jpg";
 import developmentImage from "../assets/development.jpg";
-import equipmentRepairImage from "../assets/equipment-repair.jpg";
 import householdAppliancesImage from "../assets/household-appliances.jpg";
 import officeEquipmentImage from "../assets/office-equipment.jpg";
 import phonesAndGadgetsImage from "../assets/phones-and-gadgets.jpg";
@@ -262,14 +261,14 @@ export default function App() {
             <p className="text-xl text-gray-600">Полный спектр решений для вашего бизнеса</p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="flex flex-wrap justify-center gap-8">
             {/* Service 1 */}
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition"
+              className="w-full md:w-[calc(50%-1rem)] xl:w-[calc((100%-4rem)/3)] bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition"
             >
               <img 
                 src={computerEquipmentImage}
@@ -294,7 +293,7 @@ export default function App() {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
-              className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition"
+              className="w-full md:w-[calc(50%-1rem)] xl:w-[calc((100%-4rem)/3)] bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition"
             >
               <img 
                 src={phonesAndGadgetsImage}
@@ -319,7 +318,7 @@ export default function App() {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
-              className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition"
+              className="w-full md:w-[calc(50%-1rem)] xl:w-[calc((100%-4rem)/3)] bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition"
             >
               <img 
                 src={officeEquipmentImage}
@@ -344,7 +343,7 @@ export default function App() {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.3 }}
               viewport={{ once: true }}
-              className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition"
+              className="w-full md:w-[calc(50%-1rem)] xl:w-[calc((100%-4rem)/3)] bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition"
             >
               <img 
                 src={householdAppliancesImage}
@@ -369,7 +368,7 @@ export default function App() {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
               viewport={{ once: true }}
-              className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition"
+              className="w-full md:w-[calc(50%-1rem)] xl:w-[calc((100%-4rem)/3)] bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition"
             >
               <img 
                 src={developmentImage}
@@ -388,30 +387,6 @@ export default function App() {
               </div>
             </motion.div>
 
-            {/* Service 6 */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-              viewport={{ once: true }}
-              className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition"
-            >
-              <img 
-                src={equipmentRepairImage}
-                alt="Ремонт техники"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <div className="flex items-center mb-3">
-                  <Wrench className="w-6 h-6 text-blue-600 mr-2" />
-                  <h3 className="text-xl font-semibold text-gray-900">Ремонт техники</h3>
-                </div>
-                <p className="text-gray-600 mb-4">
-                  Диагностика и ремонт компьютеров, ноутбуков, ТВ и аудиотехники
-                </p>
-                <p className="text-blue-600 font-semibold">от 1 000 ₽</p>
-              </div>
-            </motion.div>
           </div>
         </div>
       </section>
@@ -719,45 +694,6 @@ export default function App() {
               </div>
             </motion.div>
 
-            {/* Repair Services */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.9 }}
-              viewport={{ once: true }}
-              className="bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-xl p-6 shadow-md"
-            >
-              <div className="flex items-center mb-4">
-                <Wrench className="w-8 h-8 text-cyan-600 mr-3" />
-                <h3 className="text-xl font-semibold text-gray-900">Ремонт</h3>
-              </div>
-              <div className="space-y-3">
-                <div className="flex justify-between">
-                  <span className="text-gray-700">Диагностика</span>
-                  <span className="font-semibold text-gray-900">1 000 ₽</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-700">Замена SSD</span>
-                  <span className="font-semibold text-gray-900">от 2 800 ₽</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-700">Замена матрицы</span>
-                  <span className="font-semibold text-gray-900">от 6 500 ₽</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-700">Восстановление данных</span>
-                  <span className="font-semibold text-gray-900">от 6 900 ₽</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-700">Ремонт ТВ</span>
-                  <span className="font-semibold text-gray-900">от 3 800 ₽</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-700">Ремонт аудиотехники</span>
-                  <span className="font-semibold text-gray-900">от 2 900 ₽</span>
-                </div>
-              </div>
-            </motion.div>
           </div>
         </div>
       </section>
